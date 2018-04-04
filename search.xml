@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[ceshi]]></title>
+    <url>%2F2018%2F04%2F03%2Ftitle-4%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[next主题功能配置(评论功能)]]></title>
+    <url>%2F2018%2F04%2F03%2Ftitle-3%2F</url>
+    <content type="text"><![CDATA[关于博客都是根据next使用文档一步步配置完成的。NexT 使用文档:http://theme-next.iissnan.com/ 虽然使用文档中提供了DISQUS、Facebook Comments、HyperComments、网易云跟帖、来必力5个评论系统，但是DISQUS被墙了；Facebook最近又出了一个泄密门(主要博主没账号啊)；HyperComments只支持Google 账号注册(呵呵哒没有)；网易云跟帖早已停止服务；so，就他dy的来必力能使了。首先注册个来必力账号，然后选择安装版本，博主用的是city免费版，对于博客来说已经够用了。复制uid字符串，粘贴到 主题配置文件 livere_uid 后边 1livere_uid: uid 注意：在 layout/_scripts/third-party/comments/ 目录中检查是否有 livere.swig文件，如果没有就添加上，文件内容如下12345678910111213141516&#123;% if not (theme.duoshuo and theme.duoshuo.shortname) and not theme.duoshuo_shortname and not (theme.disqus.enable and theme.disqus.shortname) and not theme.hypercomments_id %&#125; &#123;% if page.comments and theme.livere_uid %&#125; &lt;script type="text/javascript"&gt; (function(d, s) &#123; var j, e = d.getElementsByTagName(s)[0]; if (typeof LivereTower === 'function') &#123; return; &#125; j = d.createElement(s); j.src = 'https://cdn-city.livere.com/js/embed.dist.js'; j.async = true; e.parentNode.insertBefore(j, e); &#125;)(document, 'script'); &lt;/script&gt; &#123;% endif %&#125;&#123;% endif %&#125;]]></content>
+      <tags>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[鼓捣企业微信中控智慧打卡机]]></title>
+    <url>%2F2018%2F03%2F29%2Ftitle-2%2F</url>
+    <content type="text"><![CDATA[今天拿到了企业微信打卡签到设备，于是先鼓捣一通。拿到手后，说明书都没有（呵呵哒）。摸索了一会，还是比较简单的，首先插电联网，然后进行以下步骤：1.通过企业微信扫一扫绑定设备。2.在企业微信中设置签到规则。3.录入员工指纹信息。然后….指纹打卡]]></content>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[随笔]]></title>
     <url>%2F2018%2F03%2F23%2Ftitle-1%2F</url>
     <content type="text"><![CDATA[哎，又在加班]]></content>
@@ -12,8 +33,5 @@
     <title><![CDATA[Hello World]]></title>
     <url>%2F2018%2F03%2F14%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-      <tags>
-        <tag>测试</tag>
-      </tags>
   </entry>
 </search>

@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>王者风范</title>
   
-  <subtitle>你瞅啥</subtitle>
+  
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-23T12:46:06.929Z</updated>
+  <updated>2018-04-03T08:52:35.963Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,66 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ceshi</title>
+    <link href="http://yoursite.com/2018/04/03/title-4/"/>
+    <id>http://yoursite.com/2018/04/03/title-4/</id>
+    <published>2018-04-03T08:52:35.000Z</published>
+    <updated>2018-04-03T08:52:35.963Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>next主题功能配置(评论功能)</title>
+    <link href="http://yoursite.com/2018/04/03/title-3/"/>
+    <id>http://yoursite.com/2018/04/03/title-3/</id>
+    <published>2018-04-03T08:05:48.000Z</published>
+    <updated>2018-04-03T09:26:36.745Z</updated>
+    
+    <content type="html"><![CDATA[<p>关于博客都是根据next使用文档一步步配置完成的。<br>NexT 使用文档:<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">http://theme-next.iissnan.com/</a> </p><p>虽然使用文档中提供了DISQUS、Facebook Comments、HyperComments、网易云跟帖、来必力5个评论系统，但是DISQUS被墙了；Facebook最近又出了一个泄密门(主要博主没账号啊)；HyperComments只支持Google 账号注册(呵呵哒没有)；网易云跟帖早已停止服务；so，就他dy的来必力能使了。<br>首先注册个来必力账号，然后选择安装版本，博主用的是city免费版，对于博客来说已经够用了。复制uid字符串，粘贴到 <code>主题配置文件</code> <code>livere_uid</code> 后边<br><img src="/2018/04/03/title-3/laibili.jpg" alt="uid"></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">livere_uid: uid</span><br></pre></td></tr></table></figure><p>注意：在 <code>layout/_scripts/third-party/comments/</code> 目录中检查是否有 <code>livere.swig</code>文件，如果没有就添加上，文件内容如下<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;% <span class="keyword">if</span> not (theme.duoshuo and theme.duoshuo.shortname) and not theme.duoshuo_shortname and not (theme.disqus.enable and theme.disqus.shortname) and not theme.hypercomments_id %&#125;</span><br><span class="line"></span><br><span class="line">  &#123;% <span class="keyword">if</span> page.comments and theme.livere_uid %&#125;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">      (<span class="keyword">function</span>(d, s) &#123;</span><br><span class="line">        var j, e = d.getElementsByTagName(s)[0];</span><br><span class="line">        <span class="keyword">if</span> (typeof LivereTower === <span class="string">'function'</span>) &#123; <span class="built_in">return</span>; &#125;</span><br><span class="line">        j = d.createElement(s);</span><br><span class="line">        j.src = <span class="string">'https://cdn-city.livere.com/js/embed.dist.js'</span>;</span><br><span class="line">        j.async = <span class="literal">true</span>;</span><br><span class="line">        e.parentNode.insertBefore(j, e);</span><br><span class="line">      &#125;)(document, <span class="string">'script'</span>);</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;关于博客都是根据next使用文档一步步配置完成的。&lt;br&gt;NexT 使用文档:&lt;a href=&quot;http://theme-next.iissnan.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://theme-next.iissnan.
+      
+    
+    </summary>
+    
+    
+      <category term="next" scheme="http://yoursite.com/tags/next/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>鼓捣企业微信中控智慧打卡机</title>
+    <link href="http://yoursite.com/2018/03/29/title-2/"/>
+    <id>http://yoursite.com/2018/03/29/title-2/</id>
+    <published>2018-03-29T11:03:55.000Z</published>
+    <updated>2018-04-02T08:58:07.854Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天拿到了企业微信打卡签到设备，于是先鼓捣一通。<br>拿到手后，说明书都没有（呵呵哒）。摸索了一会，还是比较简单的，首先插电联网，然后进行以下步骤：<br>1.通过企业微信扫一扫绑定设备。2.在企业微信中设置签到规则。3.录入员工指纹信息。<br>然后….指纹打卡</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;今天拿到了企业微信打卡签到设备，于是先鼓捣一通。&lt;br&gt;拿到手后，说明书都没有（呵呵哒）。摸索了一会，还是比较简单的，首先插电联网，然后进行以下步骤：&lt;br&gt;1.通过企业微信扫一扫绑定设备。2.在企业微信中设置签到规则。3.录入员工指纹信息。&lt;br&gt;然后….指纹打卡&lt;/p&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>随笔</title>
@@ -45,7 +105,7 @@
     <link href="http://yoursite.com/2018/03/14/hello-world/"/>
     <id>http://yoursite.com/2018/03/14/hello-world/</id>
     <published>2018-03-14T05:40:34.030Z</published>
-    <updated>2018-03-22T03:41:23.878Z</updated>
+    <updated>2018-04-03T07:30:46.311Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     
@@ -58,8 +118,6 @@
     
     </summary>
     
-    
-      <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
