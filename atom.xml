@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-03T08:52:35.963Z</updated>
+  <updated>2018-04-11T03:05:16.956Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,16 +17,26 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>ceshi</title>
+    <title>大学生毕业后档案如何处理</title>
     <link href="http://yoursite.com/2018/04/03/title-4/"/>
     <id>http://yoursite.com/2018/04/03/title-4/</id>
     <published>2018-04-03T08:52:35.000Z</published>
-    <updated>2018-04-03T08:52:35.963Z</updated>
+    <updated>2018-04-11T03:05:16.956Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://jingyan.baidu.com/article/c45ad29cd66455051753e2e9.html" target="_blank" rel="noopener">大学生毕业后档案如何处理</a></p>]]></content>
     
     <summary type="html">
     
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://jingyan.baidu.com/article/c45ad29cd66455051753e2e9.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;大学生毕业后档案如何处理&lt;/a&gt;&lt;/p&gt;
+
+      
+    
     </summary>
     
+    
+      <category term="档案" scheme="http://yoursite.com/tags/%E6%A1%A3%E6%A1%88/"/>
     
   </entry>
   
@@ -35,7 +45,7 @@
     <link href="http://yoursite.com/2018/04/03/title-3/"/>
     <id>http://yoursite.com/2018/04/03/title-3/</id>
     <published>2018-04-03T08:05:48.000Z</published>
-    <updated>2018-04-03T09:26:36.745Z</updated>
+    <updated>2018-04-11T07:04:36.703Z</updated>
     
     <content type="html"><![CDATA[<p>关于博客都是根据next使用文档一步步配置完成的。<br>NexT 使用文档:<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">http://theme-next.iissnan.com/</a> </p><p>虽然使用文档中提供了DISQUS、Facebook Comments、HyperComments、网易云跟帖、来必力5个评论系统，但是DISQUS被墙了；Facebook最近又出了一个泄密门(主要博主没账号啊)；HyperComments只支持Google 账号注册(呵呵哒没有)；网易云跟帖早已停止服务；so，就他dy的来必力能使了。<br>首先注册个来必力账号，然后选择安装版本，博主用的是city免费版，对于博客来说已经够用了。复制uid字符串，粘贴到 <code>主题配置文件</code> <code>livere_uid</code> 后边<br><img src="/2018/04/03/title-3/laibili.jpg" alt="uid"></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">livere_uid: uid</span><br></pre></td></tr></table></figure><p>注意：在 <code>layout/_scripts/third-party/comments/</code> 目录中检查是否有 <code>livere.swig</code>文件，如果没有就添加上，文件内容如下<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;% <span class="keyword">if</span> not (theme.duoshuo and theme.duoshuo.shortname) and not theme.duoshuo_shortname and not (theme.disqus.enable and theme.disqus.shortname) and not theme.hypercomments_id %&#125;</span><br><span class="line"></span><br><span class="line">  &#123;% <span class="keyword">if</span> page.comments and theme.livere_uid %&#125;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">      (<span class="keyword">function</span>(d, s) &#123;</span><br><span class="line">        var j, e = d.getElementsByTagName(s)[0];</span><br><span class="line">        <span class="keyword">if</span> (typeof LivereTower === <span class="string">'function'</span>) &#123; <span class="built_in">return</span>; &#125;</span><br><span class="line">        j = d.createElement(s);</span><br><span class="line">        j.src = <span class="string">'https://cdn-city.livere.com/js/embed.dist.js'</span>;</span><br><span class="line">        j.async = <span class="literal">true</span>;</span><br><span class="line">        e.parentNode.insertBefore(j, e);</span><br><span class="line">      &#125;)(document, <span class="string">'script'</span>);</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
     
@@ -77,26 +87,26 @@
   </entry>
   
   <entry>
-    <title>随笔</title>
+    <title>Next如何加密文章</title>
     <link href="http://yoursite.com/2018/03/23/title-1/"/>
     <id>http://yoursite.com/2018/03/23/title-1/</id>
     <published>2018-03-23T12:46:24.000Z</published>
-    <updated>2018-03-23T12:46:06.929Z</updated>
+    <updated>2018-04-11T08:12:22.445Z</updated>
     
-    <content type="html"><![CDATA[<p>哎，又在加班</p>]]></content>
+    <content type="html"><![CDATA[<p>文章原作者:<a href="https://blog.csdn.net/Lancelot_Lewis/article/details/53422901" target="_blank" rel="noopener">lancelot_lewis</a></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;哎，又在加班&lt;/p&gt;
+        &lt;p&gt;文章原作者:&lt;a href=&quot;https://blog.csdn.net/Lancelot_Lewis/article/details/53422901&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;lancelot_lewis&lt;/a&gt;&lt;/p&gt;
 
       
     
     </summary>
     
     
-      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+      <category term="next" scheme="http://yoursite.com/tags/next/"/>
     
   </entry>
   
