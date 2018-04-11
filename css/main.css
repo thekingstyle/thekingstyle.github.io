@@ -2108,7 +2108,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #61046a;
+  background: #6b74ab;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3183,7 +3183,6 @@ hr {
     text-align: center;
   }
 }
-模板Mist,
 .posts-expand .post-title,
 .posts-expand .post-meta {
   text-align: center;
@@ -3196,4 +3195,10 @@ hr {
 }
 .footer-inner {
   text-align: center;
+}
+.use-motion .post-body {
+  padding: 0px 20px;
+}
+.posts-expand .post {
+  margin-top: 40px;
 }
