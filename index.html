@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -135,7 +135,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
+    scheme: 'Mist',
     version: '',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -542,7 +542,9 @@
         
           
           关于博客都是根据next使用文档一步步配置完成的。NexT 使用文档:http://theme-next.iissnan.com/ 
-虽然使用文档中提供了DISQUS、Facebook Comments、HyperComments、网易云跟帖、来必力5个评论系统，但是DISQUS被墙了；Facebo
+虽然使用文档中提供了DISQUS、Facebook Comments、HyperComments、网易云跟帖、来必力5个评论系统，但是DISQUS被墙了；Facebook最近又出了一个泄密门(主要博主没账号啊)；HyperComments只支持Google 账号注册(呵呵哒没有)；网易云跟帖早已停止服务；so，就他dy的来必力能使了。首先注册个来必力账号，然后选择安装版本，博主用的是city免费版，对于博客来说已经够用了。复制uid字符串，粘贴到 主题配置文件 livere_uid 后边
+1livere_uid: uid
+注意：在 layout/_scripts/third-party/comments/ 目录中检查是否有 livere.swig文件，如果没有就添加上，文件内容如下12345678910111213141516&#123;% if not (theme.duoshuo and theme.duoshuo.shortname) and no
           ...
           <!--noindex-->
           <div class="post-button text-right">
@@ -922,8 +924,17 @@
       
         
           
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
-          ...
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new "My New Post"
+More info: Writing
+Run server1$ hexo server
+More info: Server
+Generate static files1$ hexo generate
+More info: Generating
+Deploy to remote sites1$ hexo deploy
+More info: Deployment
+
+          
           <!--noindex-->
           <div class="post-button text-right">
             <a class="btn" href="/2018/03/14/hello-world/#more" rel="contents">
@@ -1044,31 +1055,7 @@
 
           
           
-            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
-              <div class="links-of-blogroll-title">
-                <i class="fa  fa-fw fa-link"></i>
-                朋友们
-              </div>
-              <ul class="links-of-blogroll-list">
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="http://www.AprilBlank.com" title="AprilBlank" target="_blank">AprilBlank</a>
-                  </li>
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="https://blog.csdn.net/qq_27948659" title="大白" target="_blank">大白</a>
-                  </li>
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="http://2k.m-finder.com" title="艾克教程" target="_blank">艾克教程</a>
-                  </li>
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="https://www.m-finder.com/" title="m-finder" target="_blank">m-finder</a>
-                  </li>
-                
-              </ul>
-            </div>
+            
           
 
           
@@ -1114,6 +1101,19 @@
 
   <div class="footer-custom">已经到底了，不妨去看看其他东西吧</div>
 
+
+ 
+                
+                    <a style="color:#c00" href="https://www.AprilBlank.com" title="AprilBlank" target="_blank">AprilBlank</a>
+                
+                    <a style="color:#c00" href="https://blog.csdn.net/qq_27948659" title="大白" target="_blank">大白</a>
+                
+                    <a style="color:#c00" href="https://2k.m-finder.com" title="艾克教程" target="_blank">艾克教程</a>
+                
+                    <a style="color:#c00" href="https://www.m-finder.com/" title="m-finder" target="_blank">m-finder</a>
+                
+            </div>
+ 
 
         
 <div class="busuanzi-count">
@@ -1217,13 +1217,6 @@
 
   
   
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v="></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v="></script>
-
-
 
   
 
